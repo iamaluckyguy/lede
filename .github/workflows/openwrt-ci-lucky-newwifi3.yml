@@ -17,15 +17,15 @@ on:
   #   - cron: 0 20 * * *
    release:
      types: [published]
-   watch:                              # 监视操作
-     types: [started]                  # 点击 star 之后
+#   watch:                              # 监视操作
+#     types: [started]                  # 点击 star 之后
 
 jobs:
 
   build:
 
     runs-on: ubuntu-latest
-    if: github.event.repository.owner.id == github.event.sender.id  # 自己点的 start
+#    if: github.event.repository.owner.id == github.event.sender.id  # 自己点的 start
 
     steps:
 
